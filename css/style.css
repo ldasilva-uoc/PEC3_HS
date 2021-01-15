@@ -1,0 +1,757 @@
+/*All*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  /* font-family: "Noto Serif", serif; Texto base*/
+  /*font-family: 'Open Sans', sans-serif;*/ /*Header,foot,form,nav,h3, hilo de ariadna*/
+}
+
+a {
+  color: rgb(28, 28, 28);
+  text-decoration: solid;
+}
+
+body {
+  background-color: rgb(232, 232, 232);
+  font-family: "Noto Serif", serif;
+}
+
+/* header */
+
+header {
+  width: 100%;
+
+  color: rgb(28, 28, 28);
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+}
+
+header div:first-child a img {
+  vertical-align: middle;
+}
+header div:last-child {
+  background-color: rgb(155, 23, 0);
+  border-radius: 0.3em;
+
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+}
+header div:last-child a {
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+}
+
+header div:last-child:hover {
+  background-color: rgb(28, 28, 28);
+}
+
+/*Tittles*/
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 2%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+h1 {
+  display: inline;
+  vertical-align: middle;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Noto Serif", serif;
+}
+
+h1 span {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: rgb(155, 23, 0);
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+/* nav */
+nav {
+  text-transform: uppercase;
+  width: 50%;
+
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 0.5rem;
+  font-weight: bolder;
+}
+nav ul li:first-child {
+  margin-right: 4%;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li a:hover {
+  color: rgb(28, 28, 28, 0.5);
+}
+
+.currencypage {
+  font-style: italic;
+}
+
+/* footer */
+
+footer a {
+  color: rgb(255, 255, 255);
+}
+footer a:hover {
+  color: rgb(155, 23, 0);
+}
+
+footer {
+  padding-top: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid black;
+  background-color: rgb(67, 58, 68);
+  color: rgb(255, 255, 255);
+}
+
+footer div:first-child {
+  display: flex;
+  flex-direction: row;
+
+  padding-bottom: 3%;
+}
+
+.totop {
+  font-size: 2rem;
+  text-align: right;
+}
+
+footer ul {
+  padding: 0;
+  flex: 1;
+}
+footer ul:last-child {
+  text-align: right;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline;
+}
+
+footer ul li:after {
+  content: "•";
+  padding-left: 1%;
+}
+footer ul li:last-child:after {
+  content: none;
+}
+
+/* Links  main */
+main a:hover {
+  color: rgb(28, 28, 28);
+}
+main a {
+  color: rgb(155, 23, 0);
+}
+
+#clubs main,
+#sesiones main,
+#ft_klaus main,
+#index main {
+  width: 70%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: auto;
+  margin-bottom: 6%;
+}
+
+/* index */
+
+#index main {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#index main section {
+  padding-bottom: 4%;
+}
+
+/* - Primesa sección*/
+
+#index main section:first-child {
+  width: 65%;
+}
+#index main section:first-child p {
+  line-height: 180%;
+}
+
+/* - Segunda sección*/
+
+#index main section:nth-child(2n) {
+  width: 95%;
+  padding-bottom: 8%;
+}
+
+#index main section:nth-child(2n) div {
+  display: flex;
+  align-items: center;
+}
+
+#index main img {
+  width: 60%;
+}
+
+#index main figcaption {
+  width: 52%;
+  margin: auto;
+  font-size: 1rem;
+}
+
+/* - Tercera sección*/
+
+#index main section:last-child div {
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+}
+#index main section:last-child div div:first-child {
+  flex: 1px;
+}
+#index main section:last-child div div:first-child p {
+  font-size: 1.7rem;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 150%;
+}
+
+#index main section:last-child div div:last-child {
+  flex: 1px;
+  margin-left: 15%;
+}
+
+#index main section form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+#index main section:last-child div div form input {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-bottom: 3%;
+  padding-left: 1%;
+  font-size: 1.2rem;
+}
+#index main section:last-child div div form p {
+  margin-bottom: 3%;
+}
+#index main section form p,
+#index main section form p strong,
+#index main section form a {
+  font-size: 0.8rem;
+}
+#index main section form button {
+  background-color: rgb(155, 23, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 0.5em;
+  font-size: 1.2rem;
+  border: none;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-self: flex-start;
+}
+
+#index main section form button:hover {
+  background-color: rgb(28, 28, 28);
+}
+
+/* clubs */
+
+#clubs main section ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}
+
+#clubs main section ul li {
+  list-style: none;
+  width: 30%;
+  margin-right: 2%;
+  margin-bottom: 3%;
+}
+
+#clubs main img {
+  width: 100%;
+}
+
+#clubs h3::before,
+#sesiones h3::before {
+  color: rgb(155, 23, 0);
+  content: "····";
+  margin-right: 3%;
+}
+#clubs main section ul li p:last-child {
+  margin-top: 3%;
+}
+
+#clubs h3 {
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+/*sessiones*/
+
+/*Primera seccion*/
+
+#sesiones main section:first-child {
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-bottom: 4%;
+}
+#sesiones main section:first-child p {
+  margin-bottom: 2%;
+  line-height: 180%;
+}
+
+/*Segunda seccion*/
+#sesiones main section:last-child {
+  display: flex;
+  border-top: 2px dotted rgb(155, 23, 0);
+  padding-top: 1%;
+}
+
+/*Aside*/
+
+#sesiones main section:last-child aside {
+  flex: 2.5;
+}
+#sesiones main section:last-child div {
+  flex: 6;
+}
+
+#sesiones main section:last-child aside ul li {
+  list-style: none;
+  text-transform: uppercase;
+  color: rgb(28, 28, 28);
+}
+
+#sesiones main section:last-child aside ul li a {
+  color: rgb(28, 28, 28);
+  padding-top: 2%;
+  font-family: "Open Sans", sans-serif;
+}
+
+#sesiones main section:last-child aside ul li a:hover {
+  color: rgb(155, 23, 0);
+}
+
+/* sesiones por club*/
+
+#sesiones h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+#sesiones main section:last-child div ul li {
+  list-style: none;
+  margin-bottom: 6%;
+}
+
+#sesiones main section:last-child div ul,
+#sesiones main section:last-child aside ul {
+  padding: 0;
+  padding-top: 3%;
+}
+#sesiones main section:last-child div ul li div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+#sesiones main section:last-child div ul li div a {
+  width: 32%;
+
+  padding-bottom: 2%;
+}
+
+#sesiones main section:last-child div ul li div a:hover {
+  opacity: 0.5;
+}
+
+#sesiones main section:last-child div ul li div a figure {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 10px -5px rgb(28, 28, 28, 0.3);
+  background: rgb(255, 255, 255);
+}
+
+#sesiones main section:last-child div ul li div figcaption {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 3%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+#sesiones main section:last-child div ul li figure img {
+  width: 100%;
+}
+
+/*klaus*/
+
+#ft_klaus main h2 {
+  text-align: left;
+  margin-bottom: 4%;
+}
+
+/*hilpo de ariadna*/
+
+#ft_klaus main div:first-child {
+  margin-bottom: 3%;
+}
+#ft_klaus main div:first-child ul {
+  padding: 0;
+}
+
+#ft_klaus main div:first-child ul li {
+  display: inline;
+}
+#ft_klaus main div:first-child ul li:last-child {
+  opacity: 0.5;
+  font-family: "Open Sans", sans-serif;
+}
+#ft_klaus main div:first-child ul li::after {
+  content: "/";
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#ft_klaus main div:first-child ul li:last-child::after {
+  content: none;
+}
+
+#ft_klaus main div:first-child ul li a {
+  color: rgb(28, 28, 28);
+  font-family: "Open Sans", sans-serif;
+}
+#ft_klaus main div:first-child ul li a:hover {
+  opacity: 0.5;
+}
+
+/*Contenido*/
+
+.infoKlaus {
+  display: flex;
+}
+
+/*aside*/
+
+.infoKlaus aside {
+  flex: 1.4;
+  margin-right: 4%;
+}
+
+.infoKlaus aside ul {
+  padding: 0;
+}
+
+.infoKlaus aside ul li {
+  list-style: none;
+}
+
+.infoKlaus aside ul li ul li,
+.infoKlaus aside ul li p {
+  padding-left: 3%;
+  padding-top: 1%;
+  font-size: 0.9rem;
+}
+
+.infoKlaus aside ul li ul li span {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.infoKlaus h4 {
+  font-size: 1rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-bottom: 1px solid rgb(28, 28, 28, 0.3);
+}
+
+/*article*/
+.infoKlaus article {
+  flex: 2;
+  text-align: justify;
+  hyphens: manual;
+  line-height: 160%;
+}
+
+.infoKlaus article section p {
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.infoKlaus article section img {
+  margin-left: 1%;
+  shape-outside: circle() padding-box;
+  border-radius: 50%;
+  float: left;
+}
+
+.infoKlaus article section:nth-child(2n) h3 {
+  margin-top: 2%;
+}
+.infoKlaus iframe {
+  width: 100%;
+  border: 1px solid blue;
+  margin-top: 3%;
+}
+
+.infoKlaus article section:last-child p {
+  border: 1px solid blue;
+  margin-top: 0;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  /* header */
+  header {
+    flex-direction: column;
+  }
+
+  header div:last-child {
+    order: 1;
+
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  header div:first-child {
+    order: 2;
+    padding-top: 3%;
+  }
+
+  nav ul li {
+    display: block;
+  }
+  nav ul li:first-child {
+    margin-right: 0;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    padding-top: 2%;
+  }
+
+  nav ul li {
+    padding-top: 1%;
+  }
+
+  header div:last-child {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  /* footer*/
+
+  footer div:first-child {
+    flex-direction: column;
+    padding-bottom: 6%;
+  }
+  footer ul li {
+    display: block;
+  }
+  footer ul li:after {
+    content: none;
+  }
+  footer ul:last-child {
+    text-align: center;
+    padding-top: 9%;
+  }
+
+  footer {
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  #clubs main,
+  #sesiones main,
+  #index main,
+  #ft_klaus main {
+    width: 100%;
+    margin-top: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /*Index*/
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  /*Primera sección*/
+  #index main section:first-child {
+    width: 100%;
+  }
+  /*Segunda seccion*/
+
+  #index main section:nth-child(2n) div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*Tercera seccion*/
+  #index main section:last-child div {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  #index main img {
+    width: 30%;
+  }
+  #index main figcaption {
+    margin-bottom: 4%;
+  }
+
+  #index main section:last-child div div:last-child {
+    flex: 1px;
+    margin: 0;
+    margin-top: 6%;
+  }
+
+  #index main section form p,
+  #index main section form p strong,
+  #index main section form a {
+    font-size: 0.9rem;
+  }
+
+  /* club */
+
+  #clubs main section ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #clubs main section ul li {
+    width: 100%;
+  }
+
+  /* sesiones */
+  #sesiones main section:first-child {
+    padding: 0;
+  }
+
+  #sesiones main section:last-child {
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    padding-top: 1%;
+  }
+  #sesiones main section:last-child aside {
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+
+  #sesiones main section:last-child div ul li div {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+  #sesiones main section:last-child div ul li div a {
+    width: 60%;
+    margin-bottom: 8%;
+    margin-top: 3%;
+  }
+
+  #ft_klaus main h2 {
+    text-align: left;
+    margin-bottom: 4%;
+  }
+
+  /*hilpo de ariadna*/
+
+  #ft_klaus main div:first-child {
+    margin-bottom: 3%;
+  }
+  #ft_klaus main div:first-child ul {
+    padding: 0;
+  }
+
+  #ft_klaus main div:first-child ul li {
+    display: inline;
+  }
+  #ft_klaus main div:first-child ul li:last-child {
+    opacity: 0.5;
+    font-family: "Open Sans", sans-serif;
+  }
+  #ft_klaus main div:first-child ul li::after {
+    content: "/";
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  #ft_klaus main div:first-child ul li:last-child::after {
+    content: none;
+  }
+
+  #ft_klaus main div:first-child ul li a {
+    color: rgb(28, 28, 28);
+    font-family: "Open Sans", sans-serif;
+  }
+  #ft_klaus main div:first-child ul li a:hover {
+    opacity: 0.5;
+  }
+
+  /*Contenido*/
+
+  .infoKlaus {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*aside*/
+
+  .infoKlaus aside {
+    flex: 1.4;
+    margin-right: 4%;
+    margin-bottom: 7%;
+  }
+}

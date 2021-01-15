@@ -534,12 +534,10 @@ main a {
 }
 .infoKlaus iframe {
   width: 100%;
-  border: 1px solid blue;
   margin-top: 3%;
 }
 
 .infoKlaus article section:last-child p {
-  border: 1px solid blue;
   margin-top: 0;
   font-style: italic;
   font-variant: small-caps;
